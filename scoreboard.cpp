@@ -3,6 +3,8 @@
 #include "scoreboard.h"
 #include <iostream>
 
+using namespace std;
+
 Scoreboard::Scoreboard() : totalScore(0) {}
 
 void Scoreboard::addScore(const char* teamMember, int score) {

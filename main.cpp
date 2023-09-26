@@ -3,6 +3,8 @@
 #include <iostream>
 #include "scoreboard.h"
 
+using namespace std;
+
 int main() {
 
 Scoreboard scoreboard;
@@ -17,9 +19,8 @@ char teamMember[100];
 		cout << "0. Quit" << endl;
 		cout << "Enter your choice: ";
 		cin >> choice;
-	}		 
     // Prompt the user to add scores and display the total score
-	if (choice == 1) {
+	if (choice == 1){
 		cout << "Enter team Name: ";
 		cin >> teamMember;
 		cout << "Enter the Score: ";
@@ -27,11 +28,13 @@ char teamMember[100];
 		scoreboard.addScore(teamMember, score);
 		cout << "Goal !!" << endl;
 	}
-
-	else (choice == 2) {
+    // Total Score
+    else if (choice == 2){
 		cout << "Total Score is : " << scoreboard.getTotalScore() << endl;
 	}
-
+    // Termination
+    else {}
+    }
 
     return 0;
 }
